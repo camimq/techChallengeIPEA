@@ -1,5 +1,7 @@
-# Folders do projeto
-.csv
+# Arquivos .csv
+baseANP.csv
+df_anp_revenda.csv
+df_anp.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
