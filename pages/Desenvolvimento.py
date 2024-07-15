@@ -277,7 +277,6 @@ st.write('''
           2. **Análise Exploratória de Dados**
           3. **Dashboard**
           4. **Modelo de Machine Learning**
-          5. **Deploy do Projeto** 
          ''')
 
 #------------------------VARIAVEIS GLOBAIS------------------------------------#
@@ -293,7 +292,7 @@ st.write('''
 look_back = 10
 
 # Configura tabs da página
-tab1, tab2, tab3, tab4, tab5 = st.tabs(['Sobre os Dados', 'Análise Exploratória de Dados', 'Dashboard', 'Modelo de Machine Learning', 'Deploy do Projeto'])
+tab1, tab2, tab3, tab4 = st.tabs(['Sobre os Dados', 'Análise Exploratória de Dados', 'Dashboard', 'Modelo de Machine Learning'])
 
 # Conteúdo da tab Sobre Dados
 with tab1:
@@ -520,8 +519,8 @@ with tab4:
     plot_predict(df_results)
 
 # Conteúdo da tab Deploy do Projeto
-with tab5:
-  st.title('Deploy do Projeto')
+#with tab5:
+  #st.title('Deploy do Projeto')
   #plot_prediction(date_train, date_test, close_train, close_test, model, test_generator)
   #model_path = '../meu_modelo.h5'  # Subindo um nível para acessar o arquivo do modelo
   #model = load_model(model_path)
