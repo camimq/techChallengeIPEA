@@ -235,9 +235,9 @@ def plot_predict(df):
 ### Início da Análise exploratória de dados
 
 # cria o DataFrame
-df_anp = pd.read_csv (r'c:/Users/Elitebook/OneDrive/Desktop/web dev/techchallenge_do_ipea_fase_4/bases/df_anp.csv')
+df_anp = pd.read_csv ('../df_anp.csv')
 
-df_anp_revenda = pd.read_csv (r'c:\Users\Elitebook\OneDrive\Desktop\web dev\techchallenge_do_ipea_fase_4\bases\df_anp_revenda.csv')
+df_anp_revenda = pd.read_csv ('../df_anp_revenda.csv')
 
 # Valores mínimos, máximos e médios dos produtos por ano
 df_anp_valor = df_anp[['ano', 'produto', 'valor_venda']].groupby(['produto', 'ano']).agg(['min', 'max', 'mean']).round(2)
